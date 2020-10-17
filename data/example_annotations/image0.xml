@@ -1,0 +1,27 @@
+<annotation>
+	<folder>images</folder>
+	<filename>image0.jpg</filename>
+	<path>download_data/downloads/images/image0.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>522</width>
+		<height>481</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>occupied_bagchair</name>
+		<pose>Unspecified</pose>
+		<truncated>Unspecified</truncated>
+		<difficult>Unspecified</difficult>
+		<bndbox>
+			<xmin>4</xmin>
+			<ymin>2</ymin>
+			<xmax>521</xmax>
+			<ymax>479</ymax>
+		</bndbox>
+	</object>
+
+
+</annotation>
