@@ -1,7 +1,9 @@
-# venv
 bagchair
 .vscode
 downloads
+data
+tf_data
+
 
 
 # Byte-compiled / optimized / DLL files
