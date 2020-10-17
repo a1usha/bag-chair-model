@@ -1,7 +1,9 @@
 bagchair
 .vscode
 downloads
-data
+data/annotations
+data/images
+
 
 
 
