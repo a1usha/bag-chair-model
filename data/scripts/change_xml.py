@@ -1,3 +1,9 @@
+"""
+
+
+
+"""
+
 from xml.etree import ElementTree
 import os 
 
@@ -19,8 +25,5 @@ def main():
 
         tree.write(path + filename)
   
-# Driver Code 
 if __name__ == '__main__': 
-      
-    # Calling main() function 
     main() 
