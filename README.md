@@ -72,11 +72,11 @@ More info about annotaion formats: *[Image data labeling and annotation](https:/
 2) **Create TF Records**. I took the [script](https://github.com/tensorflow/models/blob/master/research/object_detection/dataset_tools/create_pascal_tf_record.py) from the API as a basis and changed it a little (rather, simplified it). It is worth mentioning why this format is needed - TFRecord is Tensorflow's own binary storage format, using it for storage of dataset can have significant impact on performance of import pipeline and for training in future. More info: *[Tensorflow Records? What they are and how to use them](https://medium.com/mostly-ai/tensorflow-records-what-they-are-and-how-to-use-them-c46bc4bbb564)*
 
 ```
-python create_tfrecords_from_xml.py ^
-    --image_dir=data\images ^
-    --annotations_dir=data\annotations ^
-    --label_map_path=data\label_map\pascal_label_map.pbtxt ^
-    --output_path=tf_data\bagchair.record
+python create_tfrecords_from_xml.py `
+     --image_dir=data\images `
+     --annotations_dir=data\annotations `
+     --label_map_path=data\label_map\pascal_label_map.pbtxt `
+     --output_path=tf_data\
 ```
 
 *to be continued...*
