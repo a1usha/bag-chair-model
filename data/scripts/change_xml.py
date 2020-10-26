@@ -1,15 +1,9 @@
-"""
-
-
-
-"""
-
 from xml.etree import ElementTree
 import os 
 
-folder = 'images'
-path_to_set = 'download_data/downloads/images/'
-path =  "downloads/labels/"
+folder = 'imagesss'
+path_to_set = 'data/imagesss/'
+path =  "data/annotations/"
 
 def main(): 
   
@@ -19,6 +13,8 @@ def main():
         root = tree.getroot()
 
         name = root.find("filename").text
+        name = name.split('.')[0] + '.png'
+        root.find("filename").text = name
 
         root.find("folder").text = folder
         root.find("path").text = path_to_set + name
