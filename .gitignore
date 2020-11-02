@@ -4,6 +4,8 @@ downloads
 data/annotations
 data/imagesss
 
+pre_trained_model/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
