@@ -3,10 +3,6 @@ bagchair
 downloads
 data/annotations
 data/imagesss
-models
-
-
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
