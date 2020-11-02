@@ -138,7 +138,7 @@ def main(_):
     # Divide data to train and test parts
     random.shuffle(examples_list)
     total_examples_len = len(examples_list)
-    train_examples_len = int(total_examples_len * 0.95)
+    train_examples_len = int(total_examples_len * 0.80  )
     
     train_examples = examples_list[:train_examples_len]
     test_examples = examples_list[train_examples_len:]
