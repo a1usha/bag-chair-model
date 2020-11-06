@@ -106,6 +106,8 @@ However, there are small flaws ...
 ![case 4](https://github.com/a1usha/bag-chair-model/blob/main/results/tst_4.png)
 
 At the moment I have a couple of ideas on how to improve the quality of the model, they all relate to data preparation.  
-![truth](https://github.com/a1usha/bag-chair-model/blob/main/results/truth.png)
+<p align="center">
+  <img src="https://github.com/a1usha/bag-chair-model/blob/main/results/truth.png" />
+</p>
 
 *to be continued...*
