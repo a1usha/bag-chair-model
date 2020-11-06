@@ -79,4 +79,33 @@ python create_tfrecords_from_xml.py `
      --output_path=tf_data\
 ```
 
+3) **Choose and download pre-trained model**. In our main [project](https://github.com/a1usha/NSU_project_v2.0), we are planning to use single-board computer called Raspberry Pi 4 for model inference. Therefore, models adapted to work on mobile devices were considered as a basis for training. MobileNet is a good example of such a model. The creators of this model architecture have achieved great speed by using [depthwise separable convolutions](https://machinethink.net/blog/googles-mobile-net-architecture-on-iphone/). As a result, my choice fell on an model called SSD MobileNet-v2, which is an [improved version](https://machinethink.net/blog/mobilenet-v2/#:~:text=In%20V1%20the%20pointwise%20convolution,the%20number%20of%20channels%20smaller.&text=This%20is%20also%20a%201,goes%20into%20the%20depthwise%20convolution.) of MobileNet-v1. The pre-trained model can be downloaded from [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md).
+
+4) **Fill in the required fields of the configuration file**. Typically, such a file is called *pipeline.config*. It is necessary to specify the path to the train/test *tfrecord* files, number of classes (in my case - 2), path to label map file and path to checkpoints (downloaded model) in it.
+
+5) **Train the model**. I used Google Colab to speed up my training process. It provides user with powerfull GPU for free (as I remember, for ~6-8 hours). I prepared [this](https://github.com/a1usha/bag-chair-model/blob/main/train.ipynb) notebook for transfer learning using Tensorflow Object Detection API. It is worth noting that even with a powerful graphics accelerator, the learning process can take a fair amount of time.
+
+6) **Export the frozen graph**. This part also included to the training [notebook](https://github.com/a1usha/bag-chair-model/blob/main/train.ipynb).
+
+7) **Convert model to tf lite format** (optional). *TODO*
+
+8) **Start using tou model**. I prepared this [notebook](https://github.com/a1usha/bag-chair-model/blob/main/results.ipynb) with my results.
+
+
+Results
+---
+After successfully completing model training (honestly, my free Colab session time has expired :alien:), I tested the model on a few photos:
+
+![case 1](https://github.com/a1usha/bag-chair-model/blob/main/results/tst_1.png)
+
+![case 2](https://github.com/a1usha/bag-chair-model/blob/main/results/tst_2.png)
+
+![case 3](https://github.com/a1usha/bag-chair-model/blob/main/results/tst_3.png)
+
+However, there are small flaws ...  
+![case 4](https://github.com/a1usha/bag-chair-model/blob/main/results/tst_4.png)
+
+At the moment I have a couple of ideas on how to improve the quality of the model, they all relate to data preparation.  
+![truth](https://github.com/a1usha/bag-chair-model/blob/main/results/truth.png)
+
 *to be continued...*
