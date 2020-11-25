@@ -87,9 +87,9 @@ python create_tfrecords_from_xml.py `
 
 6) **Export the frozen graph**. This part also included to the training [notebook](https://github.com/a1usha/bag-chair-model/blob/main/train.ipynb).
 
-7) **Convert model to tf lite format** (optional). *TODO*
+7) **Convert model to tf lite format** (optional). I prepared this [notebook](https://github.com/a1usha/bag-chair-model/blob/main/export_tflite.ipynb) for model tflite model convertion. You can use [this repository](https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi) to run your tflite model on a Raspberry Pi or Android device
 
-8) **Start using tou model**. I prepared this [notebook](https://github.com/a1usha/bag-chair-model/blob/main/results.ipynb) with my results.
+8) **Start using your model**. I prepared this [notebook](https://github.com/a1usha/bag-chair-model/blob/main/results.ipynb) with my results.
 
 
 Results
