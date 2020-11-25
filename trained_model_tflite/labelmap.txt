@@ -1,0 +1,2 @@
+empty_bagchair
+occupied_bagchair
