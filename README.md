@@ -83,7 +83,7 @@ python create_tfrecords_from_xml.py `
 
 4) **Fill in the required fields of the configuration file**. Typically, such a file is called *pipeline.config*. It is necessary to specify the path to the train/test *tfrecord* files, number of classes (in my case - 2), path to label map file and path to checkpoints (downloaded model) in it.
 
-5) **Train the model**. I used Google Colab to speed up my training process. It provides user with powerfull GPU for free (as I remember, for ~6-8 hours). I prepared [this](https://github.com/a1usha/bag-chair-model/blob/main/train.ipynb) notebook for transfer learning using Tensorflow Object Detection API. It is worth noting that even with a powerful graphics accelerator, the learning process can take a fair amount of time.
+5) **Train the model**. I used Google Colab to speed up my training process. It provides user with powerfull GPU for free (as I remember, for ~9 hours). I prepared [this](https://github.com/a1usha/bag-chair-model/blob/main/train.ipynb) notebook for transfer learning using Tensorflow Object Detection API. It is worth noting that even with a powerful graphics accelerator, the learning process can take a fair amount of time.
 
 6) **Export the frozen graph**. This part also included to the training [notebook](https://github.com/a1usha/bag-chair-model/blob/main/train.ipynb).
 
